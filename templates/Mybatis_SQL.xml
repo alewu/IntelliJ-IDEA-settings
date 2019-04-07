@@ -1,0 +1,23 @@
+<templateSet group="Mybatis/SQL">
+  <template name="CD" value="&lt;![CDATA[&#10;$SELECTION$&#10;]]&gt;" description="Surround with CDATA section" toReformat="false" toShortenFQNames="false" />
+  <template name="select" value="&lt;select id=&quot;$method_name$&quot; resultMap=&quot;BaseResultMap&quot;&gt;&#10;    SELECT &lt;include refid=&quot;Base_Column_List&quot;/&gt;&#10;    FROM $table_name$&#10;    WHERE $condition$&#10;&lt;/select&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="method_name" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="update" value="&lt;update id=&quot;$method_name$&quot; &gt;&#10;    UPDATE  $table_name$&#10;    SET $filed_name$ = #{$var$}&#10;    WHERE $condition$&#10;&lt;/update&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="method_name" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="filed_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>

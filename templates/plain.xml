@@ -1,0 +1,7 @@
+<templateSet group="plain">
+  <template name="psf" value="/** $comment$ */&#10;public static final $type$" description="public static final" toReformat="false" toShortenFQNames="false">
+    <variable name="comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>
