@@ -87,7 +87,7 @@
     </context>
   </template>
   <template name="test" value="@Test&#10;public void test$var$(){&#10;    $body$&#10;}" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="var" expression="" defaultValue="" alwaysStopAt="false" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
