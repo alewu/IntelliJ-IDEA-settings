@@ -1,0 +1,8 @@
+<application>
+  <component name="PostfixTemplates">
+    <template id="onn@userDefined" key=".onn" provider="builtin.java" language-level="8" topmost="true">
+      <conditions />
+      <template name="fakeKey" value="if (Objects.isNull($var$)) {&#10;        &#10;}" toReformat="true" toShortenFQNames="true" />
+    </template>
+  </component>
+</application>
