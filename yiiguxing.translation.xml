@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="package com.github.binarywang.demo.wx.mp.config;" />
       <item value="are subject to" />
       <item value="all of its copies of * thread-local instances are subject to garbage collection" />
       <item value="implicit" />
@@ -8,7 +9,7 @@
     <option name="languageScores">
       <map>
         <entry key="CHINESE" value="3" />
-        <entry key="ENGLISH" value="3" />
+        <entry key="ENGLISH" value="4" />
       </map>
     </option>
   </component>
