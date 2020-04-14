@@ -122,6 +122,10 @@
           <option name="url" value="https://github.com/alewu/business-solution.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/SLY1311220942/demo-seata-springcloud.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="D:\code" />
