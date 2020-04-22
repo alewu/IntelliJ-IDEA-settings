@@ -19,7 +19,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="post" value="/**&#10; * @author alewu&#10; * @date $date$ $time$&#10; * @description $description$&#10; */&#10;@PostMapping($path$)&#10;public Response $method_name$($params$) {&#10;    $body$&#10;    return Response.ok();&#10;}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="post" value="/**&#10; * @author alewu&#10; * @date $date$ $time$&#10; * @description $description$&#10; */&#10;@PostMapping($path$)&#10;public Response $method_name$($params$) {&#10;    $body$&#10;    return Response.ok();&#10;}" description="PostMapping" toReformat="false" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -45,7 +45,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="patch" value="/**&#10; * @author alewu&#10; * @date $date$ $time$&#10; * @description $description$&#10; */&#10;@PatchMapping($path$)&#10;public Response $method_name$($params$) {&#10;    $body$&#10;    return Response.ok();&#10;}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="patch" value="/**&#10; * @author alewu&#10; * @date $date$ $time$&#10; * @description $description$&#10; */&#10;@PatchMapping($path$)&#10;public Response $method_name$($params$) {&#10;    $body$&#10;    return Response.ok();&#10;}" description="PatchMapping" toReformat="false" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -69,7 +69,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="put" value="/**&#10; * @author alewu&#10; * @date $date$ $time$&#10; * @description $description$&#10; */&#10;@PutMapping($path$)&#10;public Response $method_name$($params$) {&#10;    $body$&#10;    return Response.ok();&#10;}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="put" value="/**&#10; * @author alewu&#10; * @date $date$ $time$&#10; * @description $description$&#10; */&#10;@PutMapping($path$)&#10;public Response $method_name$($params$) {&#10;    $body$&#10;    return Response.ok();&#10;}" description="PutMapping" toReformat="false" toShortenFQNames="true">
     <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
     <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
@@ -81,7 +81,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="map" value="Map&lt;String, Object&gt; map = new HashMap&lt;&gt;();" description="" toReformat="false" toShortenFQNames="true">
+  <template name="map" value="Map&lt;String, Object&gt; map = new HashMap&lt;&gt;();" description="Map&lt;String, Object&gt; map = new HashMap&lt;&gt;();" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
@@ -89,12 +89,6 @@
   <template name="test" value="@Test&#10;public void test$var$(){&#10;    $body$&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_CODE" value="true" />
-    </context>
-  </template>
-  <template name="ps" value="private String $var$;" description="private String" toReformat="false" toShortenFQNames="true">
-    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
@@ -116,6 +110,22 @@
   <template name="scanner" value="Scanner sc = new Scanner(System.in);" description="Scanner sc = new Scanner(System.in);" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pi" value="private Integer $name$" description="private Integer" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="ps" value="private String $name$" description="private String" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
     </context>
   </template>
 </templateSet>
