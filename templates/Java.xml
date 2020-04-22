@@ -1,0 +1,18 @@
+<templateSet group="Java">
+  <template name="pi" value="private Integer $name$" description="private Integer" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+    </context>
+  </template>
+  <template name="ps" value="private String $name$" description="private String" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+    </context>
+  </template>
+</templateSet>
