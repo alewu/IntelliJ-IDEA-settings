@@ -22,9 +22,10 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="foreach" value="    &lt;foreach collection=&quot;list&quot; open=&quot;(&quot; close=&quot;)&quot; index=&quot;index&quot; item=&quot;item&quot; separator=&quot;,&quot;&gt;&#10;            &#10;    &lt;/foreach&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="foreach" value="    &lt;foreach collection=&quot;list&quot; open=&quot;(&quot; close=&quot;)&quot; index=&quot;index&quot; item=&quot;item&quot; separator=&quot;,&quot;&gt;&#10;          #{item}&#10;    &lt;/foreach&gt;" description="" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="SQL" value="true" />
+      <option name="SQL_MYSQL" value="true" />
+      <option name="SQL_ORACLE" value="true" />
     </context>
   </template>
 </templateSet>
