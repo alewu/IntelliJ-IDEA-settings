@@ -22,5 +22,10 @@
         <option value="java-deep-completions" />
       </set>
     </option>
+    <option name="usedLanguages">
+      <set>
+        <option value="java" />
+      </set>
+    </option>
   </component>
 </application>
