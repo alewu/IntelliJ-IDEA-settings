@@ -136,4 +136,16 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="nb" value="@NotBlank(message = &quot;$field$ cannot be blank!&quot;)" description="@NotBlank" toReformat="false" toShortenFQNames="true">
+    <variable name="field" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="nn" value="@NotNull(message = &quot;$var$ cannot be null!&quot;)" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
