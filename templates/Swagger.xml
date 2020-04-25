@@ -21,8 +21,8 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="xx" value="**&#10;* $context$&#10;*/" toReformat="false" toShortenFQNames="true">
-    <variable name="context" expression="groovyScript(&quot;D:\tmp\demo.groovy&quot;, currentPackage(), className(), methodName(), jsMethodName(), methodParameters(), methodReturnType(), date(&quot;yyyy-MM-dd&quot;), time(&quot;HH:mm:ss&quot;))" defaultValue="" alwaysStopAt="true" />
+  <template name="xx" value="**&#10;* $context$ aa $SELECTION$&#10;*/" toReformat="false" toShortenFQNames="true">
+    <variable name="context" expression="groovyScript(&quot;_1.collect { it + ' = [\&quot; + ' + it + ' + \&quot;]'}.join(', ') &quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
