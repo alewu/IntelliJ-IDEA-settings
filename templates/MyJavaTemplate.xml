@@ -80,4 +80,10 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="prm" value="private void $methodName$(){&#10;    &#10;}" description="private method" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
