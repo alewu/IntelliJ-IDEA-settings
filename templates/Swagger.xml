@@ -11,18 +11,8 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="add" value="**&#10; *&#10; * @author : $author$&#10; * @date : $date$ $time$ &#10;$params$&#10;$return$&#10; */" description="add comment" toReformat="false" toShortenFQNames="true">
-    <variable name="author" expression="user()" defaultValue="" alwaysStopAt="true" />
-    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
-    <variable name="time" expression="camelCase(capitalize())" defaultValue="" alwaysStopAt="true" />
-    <variable name="params" expression="variableOfType()" defaultValue="" alwaysStopAt="true" />
-    <variable name="return" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_CODE" value="true" />
-    </context>
-  </template>
-  <template name="xx" value="**&#10;* $context$ aa $SELECTION$&#10;*/" toReformat="false" toShortenFQNames="true">
-    <variable name="context" expression="groovyScript(&quot;_1.collect { it + ' = [\&quot; + ' + it + ' + \&quot;]'}.join(', ') &quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+  <template name="swg" value="@ApiOperation(value = &quot;&quot;,notes = &quot;&quot;)&#10;@ApiImplicitParams({&#10;     $apiparams$&#10;})" description="add swagger annotation to method" toReformat="false" toShortenFQNames="true">
+    <variable name="apiparams" expression="groovyScript(&quot;def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {result+='\\t@ApiImplicitParam(name = \&quot;'+params[i]+'\&quot;,value = \&quot;\&quot;)' + ((i &lt; params.size() - 1) ? ',\\n':'')}; return result&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
