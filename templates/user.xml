@@ -5,7 +5,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="spi" value="    @ApiModelProperty(value = &quot;$field$&quot;, dataType = &quot;string&quot;)&#10;    private Integer $field$;" toReformat="true" toShortenFQNames="true">
+  <template name="spi" value="    @ApiModelProperty(value = &quot;$field$&quot;, dataType = &quot;string&quot;)&#10;    private Integer $field$;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="field" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
