@@ -1,0 +1,20 @@
+<templateSet group="Swagger">
+  <template name="am" value="@ApiModel(&quot;$var$&quot;)" description="swagger ApiModel" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="amp" value="@ApiModelProperty(value = &quot;$value$&quot;, dataType = &quot;string&quot;)" description="swagger ApiModelProperty" toReformat="true" toShortenFQNames="true">
+    <variable name="value" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="swg" value="@ApiOperation(value = &quot;&quot;,notes = &quot;&quot;)&#10;@ApiImplicitParams({&#10;     $apiparams$&#10;})" description="add swagger annotation to method" toReformat="false" toShortenFQNames="true">
+    <variable name="apiparams" expression="groovyScript(&quot;def result=''; def params=\&quot;${_1}\&quot;.replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList(); for(i = 0; i &lt; params.size(); i++) {result+='\\t@ApiImplicitParam(name = \&quot;'+params[i]+'\&quot;,value = \&quot;\&quot;)' + ((i &lt; params.size() - 1) ? ',\\n':'')}; return result&quot;, methodParameters())" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
