@@ -138,6 +138,18 @@
           <option name="url" value="https://gitee.com/baomidou/mybatis-plus.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@192.168.110.150:root/qlkj.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://192.168.110.150:8090/root/qlkj.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://192.168.110.150:8090" />
+          <option name="userName" value="wujiawei" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="D:\code" />
