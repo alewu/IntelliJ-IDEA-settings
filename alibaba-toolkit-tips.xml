@@ -1,12 +1,14 @@
 <application>
   <component name="TipsStore">
     <option name="globalFirstStartUp" value="false" />
+    <entry projectName="D:/code/SpringCloud" firstStartUp="false" />
     <entry projectName="D:/code/java-se" firstStartUp="false" />
     <entry projectName="D:/code/nacos" firstStartUp="false" />
     <entry projectName="D:/code/pig" firstStartUp="false" />
     <entry projectName="D:/code/qlkj" firstStartUp="false" />
     <entry projectName="D:/code/qlkj-xxl-admin" firstStartUp="false" />
     <entry projectName="D:/code/qlkj-xxl-admin.git" firstStartUp="false" />
+    <entry projectName="D:/code/spring-cloud-distributed" firstStartUp="false" />
     <entry projectName="D:/code/springboot-integration" firstStartUp="false" />
     <entry projectName="D:/code/test" firstStartUp="false" />
     <entry projectName="D:/code/third-party-util" firstStartUp="false" />
