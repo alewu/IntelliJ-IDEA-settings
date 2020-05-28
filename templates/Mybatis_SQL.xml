@@ -28,7 +28,7 @@
       <option name="SQL_ORACLE" value="true" />
     </context>
   </template>
-  <template name="ifs" value="&lt;if test=&quot;$var$ != null and $var$ != ''&quot;&gt;&#10;&#9;$SELECTION$&#9; = #{$var$}&#10;&lt;/if&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="ifs" value="&lt;if test=&quot;$var$ != null and $var$ != ''&quot;&gt;&#10;&#9;$SELECTION$&#9; = #{$var$}&#10;&lt;/if&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="var" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="SQL_MYSQL" value="true" />
