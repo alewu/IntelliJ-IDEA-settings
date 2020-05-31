@@ -1,5 +1,7 @@
 <templateSet group="Mybatis/SQL">
-  <template name="CD" value="&lt;![CDATA[&#10;$SELECTION$&#10;]]&gt;" description="Surround with CDATA section" toReformat="false" toShortenFQNames="false" />
+  <template name="CD" value="&lt;![CDATA[&#10;$SELECTION$&#10;]]&gt;" description="Surround with CDATA section" toReformat="false" toShortenFQNames="false">
+    <context />
+  </template>
   <template name="select" value="&lt;select id=&quot;$method_name$&quot; resultMap=&quot;BaseResultMap&quot;&gt;&#10;    SELECT &lt;include refid=&quot;Base_Column_List&quot;/&gt;&#10;    FROM $table_name$&#10;    WHERE $condition$&#10;&lt;/select&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="method_name" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
     <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
@@ -24,6 +26,13 @@
     <context>
       <option name="SQL_MYSQL" value="true" />
       <option name="SQL_ORACLE" value="true" />
+    </context>
+  </template>
+  <template name="ifs" value="&lt;if test=&quot;$var$ != null and $var$ != ''&quot;&gt;&#10;&#9;$SELECTION$&#9; = #{$var$}&#10;&lt;/if&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="SQL_MYSQL" value="true" />
+      <option name="XML_TEXT" value="true" />
     </context>
   </template>
 </templateSet>
