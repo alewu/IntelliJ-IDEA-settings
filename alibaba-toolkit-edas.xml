@@ -2,6 +2,11 @@
   <component name="EdasStore">
     <option name="serviceConnectMap">
       <map>
+        <entry key="pig">
+          <value>
+            <EdasServiceConnectModel />
+          </value>
+        </entry>
         <entry key="qlkj">
           <value>
             <EdasServiceConnectModel />
