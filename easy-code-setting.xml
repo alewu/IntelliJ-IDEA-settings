@@ -147,11 +147,15 @@
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="int unsigned" />
-                    <option name="javaType" value="java.lang.Object" />
+                    <option name="javaType" value="java.lang.Integer" />
                   </TypeMapper>
                   <TypeMapper>
                     <option name="columnType" value="tinyint unsigned" />
-                    <option name="javaType" value="java.lang.Object" />
+                    <option name="javaType" value="java.lang.Integer" />
+                  </TypeMapper>
+                  <TypeMapper>
+                    <option name="columnType" value="smallint" />
+                    <option name="javaType" value="java.lang.Integer" />
                   </TypeMapper>
                 </list>
               </option>
