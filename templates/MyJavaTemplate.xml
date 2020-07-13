@@ -24,7 +24,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="test" value="@Test&#10;public void test$var$(){&#10;    $body$&#10;}" description="test method" toReformat="false" toShortenFQNames="true">
+  <template name="test" value="@Test&#10;void test$var$(){&#10;    $body$&#10;}" description="test method" toReformat="false" toShortenFQNames="true">
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -88,6 +88,17 @@
   </template>
   <template name="jp" value="@JsonProperty(&quot;$var$&quot;)" description="@JsonProperty()" toReformat="false" toShortenFQNames="true">
     <variable name="var" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pd" value="private LocalDateTime ;" description="private LocalDateTime" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="jul" value="private static final Logger LOGGER = Logger.getLogger($CLASS$.class.getName());" description="java.util.Logger" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
