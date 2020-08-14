@@ -182,6 +182,10 @@
           <option name="url" value="ssh://huangjunkai@134.175.245.70:1122/home/qlkj/qlkj-xxl-admin.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://gitee.com/chugf/smart-redisson-spring-boot-starter.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="D:\code" />
