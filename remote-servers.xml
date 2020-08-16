@@ -1,0 +1,13 @@
+<application>
+  <component name="RemoteServers">
+    <remote-server name="Docker" type="docker">
+      <configuration>
+        <option name="apiUrl" value="https://106.54.243.76:2376" />
+        <option name="certificatesPath" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.1\ca" />
+        <option name="pathMappings">
+          <list />
+        </option>
+      </configuration>
+    </remote-server>
+  </component>
+</application>
