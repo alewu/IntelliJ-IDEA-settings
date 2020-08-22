@@ -38,9 +38,10 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="al" value="List&lt;$type$&gt; $var$ = Lists.newArrayList();" description="List&lt;$type$&gt; $var$ = Lists.newArrayList();" toReformat="false" toShortenFQNames="true">
+  <template name="al" value="List&lt;$type$&gt; $var$s = Lists.newArrayListWithCapacity($size$);" description="List&lt;$type$&gt; $var$ = Lists.newArrayList();" toReformat="false" toShortenFQNames="true">
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="camelCase(type)" defaultValue="list" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="10" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
