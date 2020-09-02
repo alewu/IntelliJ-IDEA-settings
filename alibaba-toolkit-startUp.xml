@@ -1,6 +1,7 @@
 <application>
   <component name="TipsStore">
     <option name="globalFirstStartUp" value="false" />
+    <entry projectPath="D:/code/business-solution" startUpFlag="FIRST" />
     <entry projectPath="D:/code/java-dev-toolbox" startUpFlag="FIRST" />
     <entry projectPath="D:/code/mysql-script" startUpFlag="FIRST" />
     <entry projectPath="D:/code/nacos" startUpFlag="FIRST" />
