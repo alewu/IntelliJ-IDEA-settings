@@ -106,4 +106,14 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="tfgm" value="@TableField(value = &quot;gmt_modified&quot;, fill = FieldFill.INSERT_UPDATE)" description="@TableField(value = &quot;gmt_modified&quot;, fill = FieldFill.INSERT_UPDATE)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tfgc" value="@TableField(value = &quot;gmt_create&quot;,fill = FieldFill.INSERT)" description="@TableField(value = &quot;gmt_create&quot;,fill = FieldFill.INSERT)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
