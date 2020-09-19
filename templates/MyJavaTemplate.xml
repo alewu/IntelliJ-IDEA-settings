@@ -19,7 +19,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="map" value="Map&lt;String, $valueType$&gt; map = Maps.newHashMapWithExpectedSize($size$);" description="Map&lt;String, Object&gt; map = new HashMap&lt;&gt;();" toReformat="false" toShortenFQNames="true">
+  <template name="map" value="Map&lt;String, $valueType$&gt; map = Maps.newHashMapWithExpectedSize($size$);" description="Map&lt;String, Object&gt; map = Maps.newHashMapWithExpectedSize" toReformat="false" toShortenFQNames="true">
     <variable name="valueType" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="size" expression="" defaultValue="16" alwaysStopAt="true" />
     <context>
@@ -102,6 +102,21 @@
   </template>
   <template name="jul" value="private static final Logger LOGGER = Logger.getLogger($CLASS$.class.getName());" description="java.util.Logger" toReformat="false" toShortenFQNames="true">
     <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logStart" value=" log.info(&quot;op=start_$METHOD_NAME$, $PARAMS_FORMAT$&quot;, $PARAMS$);" description="log method" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMS_FORMAT" expression="groovyScript(&quot;_1.collect{it+'={}'}.join(', ')&quot;, methodParameters())" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="groovyScript(&quot;_1.collect{it}.join(', ')&quot;, methodParameters())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psc" value="/**&#10; * $comment$&#10; */&#10; private String $name$&#10; &#10; " toReformat="false" toShortenFQNames="true">
+    <variable name="comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
     </context>
