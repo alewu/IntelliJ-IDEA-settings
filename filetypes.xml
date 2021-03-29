@@ -7,6 +7,7 @@
       <mapping ext="main.kts" type="Kotlin" />
       <mapping pattern="tsconfig.lib.json" type="PLAIN_TEXT" />
       <mapping ext="factories" type="PLAIN_TEXT" />
+      <mapping ext="ymal" type="YAML" />
       <mapping pattern="tsconfig.app.json" type="tsconfig" />
       <mapping pattern="tsconfig.e2e.json" type="tsconfig" />
       <mapping pattern="tsconfig.spec.json" type="tsconfig" />
